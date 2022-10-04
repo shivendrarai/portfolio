@@ -35,6 +35,7 @@ body {
 
 .header {
   position: relative;
+
   height: 100vh;
   background-image: linear-gradient(
       to left bottom,
@@ -86,8 +87,13 @@ body {
   display: block;
   font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: 1.1rem;
+  letter-spacing: 0.7rem;
   animation: moveInRight 1.5s ease-out;
+  color: rgba(218, 55, 55, 0.912);
+}
+.heading-primary-sub span {
+  letter-spacing: 0.1rem;
+  color: #fff;
 }
 
 @keyframes moveInleft {
@@ -380,12 +386,9 @@ svg {
   text-align: left;
   position: absolute;
   z-index: -1;
-  /* top 0; */
-}
-
-.about .sub-title {
   letter-spacing: 0.25rem;
   font-size: 1.4rem;
+  /* top 0; */
 }
 
 .about-me {
@@ -444,6 +447,9 @@ svg {
   .about {
     margin: auto;
   }
+  .about-me {
+    margin-top: 30px;
+  }
   .about-body p {
     margin-bottom: 10px;
     font-size: 15px;
@@ -459,8 +465,12 @@ svg {
   }
   .about .sub-title {
     margin: auto;
+    text-align: center;
+    position: static;
   }
-
+  .about {
+    padding: 1.6rem;
+  }
   .heading-primary-main {
     font-size: 2.3rem;
     letter-spacing: 26px;
