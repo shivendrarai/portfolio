@@ -70,23 +70,26 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 70px;
+  margin-bottom: 5.1rem;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
 }
 
 .heading-primary-main {
   display: block;
   font-size: 3.5rem;
   font-weight: 400;
-  letter-spacing: 2.1rem;
+  letter-spacing: 1.9rem;
   animation-name: moveInleft;
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
 }
+
 .heading-primary-sub {
   margin-top: 1.3rem;
   display: block;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.6rem;
+  font-weight: 800;
   letter-spacing: 0.7rem;
   animation: moveInRight 1.5s ease-out;
   color: rgba(218, 55, 55, 0.912);
@@ -208,6 +211,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20.5rem, 1fr));
   column-gap: 1.1rem;
+  row-gap: 0.5rem;
 }
 
 .skill-type {
@@ -473,7 +477,7 @@ svg {
   }
   .heading-primary-main {
     font-size: 2.3rem;
-    letter-spacing: 26px;
+    letter-spacing: 1.8rem;
   }
   .heading-primary-sub {
     font-size: 1.6rem;
