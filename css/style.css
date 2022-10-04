@@ -199,14 +199,15 @@ body {
   margin: auto;
   width: 97%;
   /* padding:5px */
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20.5rem, 1fr));
+  column-gap: 1.1rem;
 }
 
 .skill-type {
   /* flex-grow: 1; */
   /* width: 300px; */
-  min-width: 330px;
+  /* min-width: 330px; */
   display: flex;
   flex-direction: column;
   align-content: stretch;
@@ -241,6 +242,10 @@ body {
 .skill-type i {
   font-size: 2.6rem;
 }
+.skill-type i:hover,
+.skill-type svg:hover {
+  color: #dfac5d;
+}
 
 svg {
   height: 2.5rem;
@@ -256,15 +261,22 @@ svg {
   .skills-body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     gap: 10px;
   }
   .skill-type div {
     display: flex;
     flex-direction: row;
+
     gap: 10px;
     padding: 13px;
+  }
+  .passport {
+    align-self: flex-end;
+  }
+  .hidden {
+    display: none;
   }
 }
 
@@ -394,7 +406,7 @@ svg {
 }
 .about-body p a {
   text-decoration: none;
-  color: #366999;
+  color: #21374b;
 }
 
 .about-body p a:hover {
