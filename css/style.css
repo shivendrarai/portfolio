@@ -17,6 +17,10 @@ html {
   html {
     font-size: 67%;
   }
+
+  .text-box {
+    top: 40%;
+  }
 }
 
 html,
@@ -92,6 +96,7 @@ body {
   font-weight: 800;
   letter-spacing: 0.7rem;
   animation: moveInRight 1.5s ease-out;
+  line-height: 3rem;
   color: rgba(218, 55, 55, 0.912);
 }
 .heading-primary-sub span {
@@ -135,11 +140,11 @@ body {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 1.5;
-  padding: 1rem 5rem;
+
+  padding: 1.1rem 5rem;
   display: inline-block;
   margin: auto;
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 
 .btn:hover {
@@ -158,7 +163,7 @@ body {
   margin: auto;
   cursor: pointer;
   line-height: 1.8rem;
-  letter-spacing: 1.8;
+  letter-spacing: 0.2rem;
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
@@ -218,6 +223,7 @@ body {
   /* flex-grow: 1; */
   /* width: 300px; */
   /* min-width: 330px; */
+
   display: flex;
   flex-direction: column;
   align-content: stretch;
@@ -268,23 +274,20 @@ svg {
     background-color: red;
   } */
 
-  .skills-body {
+  /* .skills-body {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     gap: 10px;
-  }
-  .skill-type div {
+  } */
+  /* .skill-type div {
     display: flex;
     flex-direction: row;
 
     gap: 10px;
     padding: 13px;
-  }
-  .passport {
-    align-self: flex-end;
-  }
+  } */
+
   .hidden {
     display: none;
   }
@@ -335,7 +338,7 @@ svg {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #114e62b0;
+  background-color: rgba(0, 0, 0, 0.263);
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -399,6 +402,7 @@ svg {
   margin: 50px;
   margin-top: 100px;
   display: flex;
+  align-content: center;
   gap: 5rem;
 }
 
@@ -432,7 +436,7 @@ svg {
   .about img {
     position: static;
     width: 250px;
-
+    margin: auto;
     max-height: auto;
   }
   .about .sub-title {
@@ -461,6 +465,10 @@ svg {
   /* .about-me img {
     display: none;
   } */
+  .btn:link,
+  .btn:visited {
+    padding: 1.5rem 5rem;
+  }
 }
 
 @media (max-width: 650px) {
@@ -473,7 +481,7 @@ svg {
     position: static;
   }
   .about {
-    padding: 1.6rem;
+    padding: 1.6rem 0.7rem;
   }
   .heading-primary-main {
     font-size: 2.3rem;
