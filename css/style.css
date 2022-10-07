@@ -43,7 +43,7 @@ body {
   height: 100vh;
   background-image: linear-gradient(
       to left bottom,
-      rgba(13, 35, 55, 0.99),
+      #0d2337fc,
       rgba(23, 45, 65, 0.8)
     ),
     url(../img/hero.jpg);
@@ -257,6 +257,7 @@ body {
 }
 .skill-type i {
   font-size: 2.6rem;
+  color: #21374b;
 }
 .skill-type i:hover,
 .skill-type svg:hover {
@@ -365,7 +366,7 @@ svg {
 /* .about Section  */
 
 .about {
-  padding: 2.5rem;
+  padding-top: 2.5rem;
   /* min-height: 100vh; */
   text-align: center;
   margin: auto 10%;
@@ -387,7 +388,7 @@ svg {
   background-color: #21374b;
   color: rgb(255, 255, 255);
   width: 85%;
-  margin-left: 80px;
+  margin-left: 100px;
   padding: 10px 50px;
   margin-top: 50px;
   text-align: left;
@@ -410,6 +411,10 @@ svg {
   padding: 50px 5%;
   color: black;
   text-align: justify;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .about-body p {
   margin-bottom: 10px;
@@ -423,17 +428,57 @@ svg {
 .about-body p a:hover {
   text-decoration: underline;
 }
-.about img {
+.about .my-img {
   max-width: 280px;
   max-height: 480px;
   border-radius: 7px;
   position: relative;
   top: -120px;
+  left: -50px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.582);
 }
 
+.about .my-img2 {
+  background-color: #21374b;
+  display: none;
+  max-width: 250px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  animation: blob 3.7s linear infinite;
+  margin-bottom: 1rem;
+}
+/* @keyframes blob {
+  0%,
+  100% {
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  }
+
+  33% {
+    border-radius: 42% 28% 48% 48% / 28% 28% 72% 72%;
+  }
+  66% {
+    border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+  }
+} */
+@keyframes blob {
+  0%,
+  100% {
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  }
+
+  33% {
+    border-radius: 42% 28% 48% 48% / 28% 28% 72% 72%;
+  }
+
+  66% {
+    border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+  }
+}
+
 @media (max-width: 1300px) {
-  .about img {
+  .about .my-img {
     position: static;
     width: 250px;
     margin: auto;
@@ -473,8 +518,13 @@ svg {
 }
 
 @media (max-width: 650px) {
-  .about-me img {
+  .about-me .my-img {
     display: none;
+  }
+  .about .my-img2 {
+    display: block;
+    /* max-width: 250px;
+    height: auto; */
   }
   .about .sub-title {
     margin: auto;
@@ -491,6 +541,9 @@ svg {
   .heading-primary-sub {
     font-size: 1.6rem;
     letter-spacing: 12px;
+  }
+  .about-body {
+    padding: 0rem 5%;
   }
 }
 
