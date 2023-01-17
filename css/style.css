@@ -1,7 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Lato:wght@400;700&family=Lobster&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(173, 172, 172, 0.1) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.7);
+  border-radius: 20px;
+  border: transparent;
 }
 
 html {
@@ -71,6 +88,7 @@ body {
 }
 
 .heading-primary {
+  /* font-family: "Caveat"; */
   color: #ffffff;
   text-transform: uppercase;
   backface-visibility: hidden;
@@ -87,9 +105,19 @@ body {
   animation-name: moveInleft;
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
+
+  background: linear-gradient(
+    to bottom,
+    #5d5c68,
+    rgb(217, 221, 221),
+    rgba(175, 175, 178, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .heading-primary-sub {
+  font-family: cursive;
   margin-top: 1.3rem;
   display: block;
   font-size: 1.6rem;
@@ -97,7 +125,9 @@ body {
   letter-spacing: 0.7rem;
   animation: moveInRight 1.5s ease-out;
   line-height: 3rem;
-  color: rgba(218, 55, 55, 0.912);
+  background: rgba(218, 55, 55, 0.912);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .heading-primary-sub span {
   letter-spacing: 0.1rem;
@@ -578,3 +608,22 @@ footer i {
 .social-list-item {
   padding: 0.5rem;
 }
+
+/* // trailer */
+
+/* #trailer {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 20px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+body:hover > #trailer {
+  opacity: 1;
+} */
